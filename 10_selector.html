@@ -8,25 +8,68 @@
     <title>Selector</title>
     <style>
         /* Element Selector */
+        /* h1 {
+            color: red
+        }
 
+        h2 {
+            color: green;
+        }
+
+        p {
+            font-size: 12px;
+        } */
 
         /* Class Selector */
-
+        /* p.paragraf-2 {
+            color: red;
+        } */
 
         /* Id Selector */
+        /* #content-1 {
+            background-color: yellow;
+        } */
 
 
         /* Mimilih element p yang memiliki class paragraf 2 */
-
+        /* p.paragraf-2 {
+            color: red;
+        } */
 
         /* Mililih element p yang memiliki class paragraf 2 pada content-1 */
 
-        /* Memilih list yang ganji; aja */
+        /* #content-1 p.paragraf-2 {
+            color: red;
+        } */
 
+        /* Memilih list yang ganji; aja */
+        /* .ganjil {
+            background-color: red;
+        } */
+
+        /* li:nth-child(even) {
+            color: red;
+        } */
 
         /* hanya Mimilih content-2 paragraf 1 */
+        /* #content-2>p:nth-child(2) {
+            color: red;
+        } */
 
         /* Merubah warna background ketika kursor  mengarah ke tagnya*/
+
+        /* p {
+            background-color: yellow;
+        }
+
+        p:hover {
+            background-color: green;
+        } */
+
+        ul::before {
+            content: 'a';
+            color: red;
+        }
     </style>
 </head>
 
@@ -39,7 +82,7 @@
 
     <div class="content" id="content-2">
         <h2>Content 2</h2>
-        <p>Content-2 Paragraf 1</p>
+        <p class="paragraf-1">Content-2 Paragraf 1</p>
         <p class="paragraf-2">Content-2 Paragraf-2</p>
 
         <div id="subcontent-2">
@@ -55,11 +98,11 @@
     </div>
 
     <ul>
-        <li>list 1</li>
+        <li class="ganjil">list 1</li>
         <li>list 2</li>
-        <li>list 3</li>
+        <li class="ganjil">list 3</li>
         <li>list 4</li>
-        <li>list 5</li>
+        <li class="ganjil">list 5</li>
         <li>list 6</li>
     </ul>
 

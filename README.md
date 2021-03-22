@@ -43,6 +43,7 @@ Box Model
 5. [Video CSS Layouting](https://www.youtube.com/playlist?list=PLFIM0718LjIUu4Ju9GUL5zpLcuq08TKYr)
 6. [Video CSS Flexbox](https://www.youtube.com/playlist?list=PLFIM0718LjIU1lWlM34j6E9fMlrrSGZ1k)
 7. [Video CSS Grid](https://www.youtube.com/playlist?list=PLFIM0718LjIXmbwX0dEsoRVX-PC16vmuw)
+8. [CSS Attribute Selectors](https://www.w3schools.com/css/css_attribute_selectors.asp)
 
 ## Materi JavaScript
 

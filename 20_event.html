@@ -10,21 +10,50 @@
         div {
             margin-top: 20px;
         }
+
+        button:hover {
+            background-color: green;
+        }
     </style>
 </head>
 
 <body>
 
     <h1>Hallo World</h1>
-    <button>Click Me</button>
+    <button onclick="tombolKlik()">Click Me</button>
 
     <div>
         <input type="text">
-        <p>Hasil Ketikan : <span class="hasil-ketikan"></span></p>
+        <p>Hasil Ketikan : <span id="hasil-ketikan"></span></p>
     </div>
 
     <script>
+        let button = document.querySelector('button');
 
+        button.addEventListener('mouseover', function () {
+            button.style.backgroundColor = "red";
+            console.log(button);
+        })
+
+        button.addEventListener('mouseleave', function () {
+            button.style.backgroundColor = "";
+        })
+
+        // button.addEventListener('click', )
+
+        function tombolKlik() {
+            document.querySelector('h1').textContent = "hay";
+        }
+
+        let input = document.querySelector('input');
+
+        input.addEventListener('keyup', function () {
+            document.getElementById('hasil-ketikan').textContent = input.value;
+        })
+
+        console.log(parseInt('ant1'));
+        console.log(parseInt('1.5'));
+        console.log(parseFloat('1.4asd'))
     </script>
 </body>
 

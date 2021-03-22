@@ -29,10 +29,17 @@
 
     <script>
         // getElementById()
+        // console.log(document.getElementById('sidebar'))
 
         // querySelector()
+        console.log(document.querySelector('#content p'))
 
-        // querySelectorAll()
+        // console.log(document.querySelectorAll('#content p'))
+
+        let p = document.querySelector('#content p');
+        p.style.color = "red";
+        console.log(p.textContent)
+        p.textContent = "Haloo"
     </script>
 </body>
 
