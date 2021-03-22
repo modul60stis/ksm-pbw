@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+    <title>UTS Pemrograman Web</title>
+    <script id="s1">
+        function lacak(a, b, c, d) {
+            if (a > b && c > d) {
+                if (a > d || c < d) {
+                    if (b < d) {
+                        document.writeln(Math.round(a))
+                    } else {
+
+                        document.writeln(Math.ceil(b));
+                    }
+                } else {
+                    document.writeln(Math.floor(c));
+                }
+            } else {
+                if (a == d || c == d) {
+                    if (b < c) {
+                        document.writeln(Math.ceil(b))
+                    } else {
+                        document.writeln(Math.floor(c));
+
+                    }
+                } else {
+                    document.writeln(d.toFixed(2));
+                }
+            }
+        }
+        var a = 9.6565;
+        var b = 6.6565;
+        var c = 7.6565;
+        var d = 4.6565;
+    </script>
+</head>
+
+<body>
+    <p>
+        <script id="s1">
+            lacak(a, b, c, d);
+        </script>
+    </p>
+    <script id="s2">
+        // var v = /* soal nomor 4 */
+        // urutkan_dan_tampilkan(v); /* soal nomor 4 */
+    </script>
+</body>
+
+</html>
