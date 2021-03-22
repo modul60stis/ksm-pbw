@@ -28,17 +28,25 @@
             color: black;
         }
     </style>
+
     <script type="text/javascript">
         function changeColor() {
-            (1)
+            // Nomor 4
+            let warna = ['yellow', 'green', 'blue', 'orange', 'red', 'black'];
+
+            let pilihanWarna = Math.floor(Math.random() * warna.length);
+
+            document.querySelector('p').className = warna[pilihanWarna]
         }
     </script>
+
 </head>
 
 <body>
-    <p class="black" (2)><a href="(3)">Klik di
+    <p class="black"><a href="#" onclick="changeColor()">Klik di
             sini</a>untuk mengubah warna paragraf ini secara
         acak</p>
+
 </body>
 
 </html>

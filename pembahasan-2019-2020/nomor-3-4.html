@@ -43,8 +43,14 @@
         </script>
     </p>
     <script id="s2">
-        // var v = /* soal nomor 4 */
-        // urutkan_dan_tampilkan(v); /* soal nomor 4 */
+        function urutkan_dan_tampilkan(v) {
+            v.sort()
+            for (let i = 0; i < v.length; i++) {
+                document.write(v[i] + '<br>')
+            }
+        }
+        var v = [a, b, c, d]
+        urutkan_dan_tampilkan(v); /* soal nomor 4 */
     </script>
 </body>
 
